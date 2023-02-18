@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .bgColor{
+        background-color: #e7f4fb;
+        padding: 20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div  class="flex justify-between bgColor">
+        <div>
+          <h2> Interactive</h2>
+          <P> Geometry Genious</P>
+        </div>
+        <div>
+         <button class="btn btn-primary">   <a href="./details.html"> blog </a> </button>
+        </div>
+      </div>
+    </header>
+    <main >
+      <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="products-cetails w-full sm:w-[100%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          id="my-div">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img style="width: 60%;" src="./images/triangle.png" alt="Triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" style="text-align: center;" id="first-name">Triangle</h2>
+              <p class="text-center">
+                Area (A) = 0.5 b x h
+              </p>
+              <input
+                type="text"
+                id="onekBarFail"
+                placeholder="b cm h cm" />
+              <div class="card-actions justify-end">
+                <button style="width: 100%;" class="btn btn-secondary" id="zero Card">
+                  calculate (fail)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img style="width: 60%;" src="./images/rectangle.png" alt="rectangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">rectangle</h2>
+              <p>
+                Area (A) = b x h
+              </p>
+              <input
+              type="text"
+              id="onekBarFail"
+              placeholder="b cm h cm" />
+              <div class="card-actions justify-end">
+                <button style="width: 100%;" class="btn btn-secondary" id="">
+                  calculate (fail)
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img style="width: 60%;" src="./images/parallelogram.png" alt="parallegogram" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="thiredTitleName">Parallelogram </h2>
+              <p>
+                Area (A) = b x h
+
+              </p>
+              <div class="flex justify-center items-center">
+                <p>b =<span id="thirdCalculateOne">10</span>cm</p>
+                <p>h <span id="thirdCalculatetwo">12</span>cm</p>
+              </div>
+              <div class="card-actions justify-end">
+                <button class="btn btn-secondary" style="width: 100%;" id="third-ekram">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img style="width: 60%;" src="./images/rhombus.png" alt="Rhombus" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title " id="fourRhombus"> Rhombus</h2>
+              <p>
+                Area (A) = 0.5 x d <sub>1</sub> x d <sub>2</sub> 
+              </p>
+      
+              <p> d1= <span id="fourData"> 16 </span> cm </p>
+              <p> d2= <span id="fourDataTwo"> 8 </span> cm </p>
+              
+                <!-- <p> d1 = <span class="BabEKRAM "> 16</span> cm </p>
+                 <p>d2 = <span class="fourCalTwo"> 8 </span>cm</p> -->
+
+             
+              <div class="card-actions justify-end">
+                <button style="width: 100%;" class="btn btn-secondary" id="fourButonFinal" >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- five card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img style="width: 60%;" src="./images/pentagon.png" alt="PENTAGON" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title " id="fivePentagon"> Pentagon</h2>
+              <p>
+                Area (A) = 0.5 x p <sub>1</sub> x b <sub>2</sub> 
+              </p>
+      
+              <p> p= <span id="fiveData"> 6 </span> cm </p>
+              <p> b= <span id="fiveDataTwo"> 8 </span> cm </p>
+              
+                <!-- <p> d1 = <span class="BabEKRAM "> 16</span> cm </p>
+                 <p>d2 = <span class="fourCalTwo"> 8 </span>cm</p> -->
+
+             
+              <div class="card-actions justify-end">
+                <button style="width: 100%;" class="btn btn-secondary" id="fivebtnFinal" >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- six  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img style="width: 60%;" src="./images/ellipse.png" alt="Ellipse" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="sixName">Ellipse</h2>
+              <p>
+                Area (A) = &pi;ab </p>
+
+                <p> a= <span id="sixData"> 10 </span> cm </p>
+                <p> b= <span id="sixDataTwo"> 4 </span> cm </p>
+              
+              <div class="card-actions justify-end">
+                <button style="width: 100%;" class="btn btn-secondary" id="sixLast">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+          <h4 class="text-3xl text-center font-bold underline mt-5">
+            Area Calculation
+          </h4>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>CM</th>
+                  <th>CM</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="tableMain">
+              </tbody>
+              <!-- dynamic javascript -->
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const colors = ["red", "blue", "green", "yellow", "purple", "pink", "teal"];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.getElementById("my-div").classList.add(`bg-${randomColor}-500`);
+      </script>
+    <script src="./index.js"></script>
+    <script src="./four.js"></script>
+    <script src="./five.js"></script>
+    <script src="./six.js"></script>
+  </body>
+</html>
